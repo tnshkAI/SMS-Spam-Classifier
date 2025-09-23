@@ -6,16 +6,9 @@ from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 
 # Download necessary NLTK data
-try:
-    nltk.data.find('corpora/stopwords')
-except nltk.downloader.DownloadError:
-    nltk.download('stopwords')
+nltk.download('stopwords')
+nltk.download('punkt')
 
-try:
-    nltk.data.find('tokenizers/punkt')
-except nltk.downloader.DownloadError:
-    nltk.download('punkt')
-    
 # tfidf = pickle.load(open('vectorizer.pkl','rb'))
 # model = pickle.load(open('model1.pkl','rb'))
 tfidf = pickle.load(open('vectorizer(max_ft=3000).pkl','rb'))
