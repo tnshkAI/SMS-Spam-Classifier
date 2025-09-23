@@ -4,8 +4,8 @@ import pickle
 import string
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
+from nltk import PunktTokenizer
 
-nltk.download('punkt')
 # tfidf = pickle.load(open('vectorizer.pkl','rb'))
 # model = pickle.load(open('model1.pkl','rb'))
 tfidf = pickle.load(open('vectorizer(max_ft=3000).pkl','rb'))
