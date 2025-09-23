@@ -1,10 +1,10 @@
-collections
+# collections
 matplotlib
 nltk
 numpy
 pandas
 seaborn
 streamlit
-string
+# string
 scikit-learn
 wordcloud
